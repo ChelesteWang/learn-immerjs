@@ -20,7 +20,7 @@ class Person {
   private age: number;
   private gender: IGender;
 
-  constructor({ name, age, gender }) {
+  constructor({ name, age, gender }: any) {
     this.name = name;
     this.age = age;
     this.gender = gender;
@@ -48,5 +48,9 @@ class Person {
  * @param Person
  */
 const xiaoming = new Person(obj);
+
+console.log(xiaoming.getPerson());
+
+xiaoming.setAge(18);
 
 console.log(xiaoming.getPerson());
