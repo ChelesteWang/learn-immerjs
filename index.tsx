@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
+import { Test } from './src/feature-5';
 import './style.css';
 
 interface AppProps {}
@@ -9,17 +10,10 @@ interface AppState {
 }
 
 class App extends Component<AppProps, AppState> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: 'React',
-    };
-  }
-
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
+        <Test />
       </div>
     );
   }
